@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  height: 900vh;
+  overflow-x: hidden;
+}
+.header-line {
+  background-color: #001e15;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 500;
+  position: fixed;
+  width: 100%;
+}
+ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  font-size: 16px;
+}
+li {
+  position: relative;
+}
+li:hover .submenu {
+  display: flex;
+}
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: #001e15;
+  padding: 1em;
+  white-space: nowrap;
+}
+a.active {
+  color: #ffc5a1;
+}
+.submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+}
+.cart {
+  position: relative;
+  border-right: 1px solid #ffc5a1;
+  height: 80px;
+}
+.cart-img {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+}
+.phone-img {
+  position: relative;
+  display: flex;
+}
+.phone-text {
+  top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+.number {
+  color: #fff;
+  text-decoration: none;
+}
+.number:hover {
+  color: #eb8546;
+}
+.button {
+  background-color: #6e8b5a;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding: 14px 18px;
+  font-weight: 500;
+  transition: color 0.2s linear;
+}
+.button:hover {
+  background-color: #eb8546;
+}
+.catalog-title {
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 130px;
+}
+.doctors-holder {
+  margin-left: 5%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-rows: repeat(auto-fit, 500px);
+}
+.doctor {
+  width: 240px;
+  background-color: #cdcabc;
+  margin-top: 10px;
+  padding: 0px 15px;
+  font-family: "Tinos", serif;
+}
+.doctor-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 31px;
+  height: 200px;
+}
+.doctor-title {
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 400;
+}
+.doctor-subtitle {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  color: #221f1f;
+  margin-bottom: 20px;
+}
+.doctor-phone {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  color: #646464;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: block;
+  }
+  .submenu {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .button {
+    font-size: small;
+  }
+  .phone-img {
+    font-size: small;
+  }
+  .phone {
+    font-size: small;
+  }
+}
+@media (max-width: 700px) {
+  .button {
+    padding: 0;
+  }
+}

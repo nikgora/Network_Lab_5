@@ -1,0 +1,6 @@
+
+‘	cpp:S5276s"uimplicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long long') to 'int'(¢å¨Œ8®ŸîŒõ0
+‘	cpp:S5276z"uimplicit conversion loses integer precision: 'std::basic_string<char>::size_type' (aka 'unsigned long long') to 'int'(¢å¨Œ8®ŸîŒõ0
+]	cpp:S6004j"AUse the init-statement to declare "file" inside the if statement.(é•†µ8††õ0
+Q	cpp:S1659L"0Define each identifier in a dedicated statement.(ÉÈë‰ıÿÿÿÿ8‹†õ0
+M	cpp:S5945C"2Use "std::string" instead of a C-style char array.(ÎÖÿ8Œ†õ0

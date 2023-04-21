@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar ul {
+  display: none;
+  background-color: #255525;
+  border-radius: 0px 0px 20px 20px;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+}
+#navbar li:hover ul {
+  display: block;
+}
+#navbar,
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #91c27d;
+  width: 100%;
+  z-index: 5;
+}
+.navbar-content {
+  text-align: center;
+  background-color: #91c27d;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #e7f0ef;
+}
+.navbar-content:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 75px;
+  background-color: #91c27d;
+  padding-left: 30px;
+  min-width: 470px;
+}
+
+#navbar li a {
+  display: block;
+  padding: 7px;
+  width: 180px;
+  height: 55px;
+  font-size: 19px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+  color: #e7f0ef;
+  text-decoration: none;
+  text-align: center;
+}
+#navbar li {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+html {
+  background-image: url(1652703058_1-celes-club-p-zoopark-art-krasivo-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#navbar ul li {
+  float: none;
+}
+#navbar li:hover {
+  background-color: #559364;
+  border-radius: 20px 20px 0px 0px;
+}
+#navbar ul li:hover {
+  background-color: #666;
+}
+.pic1 {
+  display: flex;
+  height: 75px;
+  width: 150px;
+  padding: 2px;
+}
+
+.Registr {
+  background-color: #bb7dc2;
+}
+
+ .content2 {
+  text-align: center;
+  color: #e7f0ef;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+  font-size: 35px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 1250px;
+  margin-top: 140px;
+} 
+.content2:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+/* .content {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 500px;
+  padding-left: 10px;
+  margin-top: 120px;
+  height: auto;
+  padding-bottom: 15px;
+} */
+/* .textinput {
+  border: 1px solid #666;
+  height: 50px;
+  padding: 0px 10px;
+  font-size: 18px;
+  width: 300px;
+  margin: 0px 0px 10px 0px;
+}
+.textinput:focus {
+  box-shadow: 0px 0px 20px rgb(238, 155, 1);
+} */
+
+/* .textbutton {
+  display: block;
+  width: 325px;
+  height: 25px;
+  background-color: rgba(91, 161, 153, 0.8);
+  font-size: 18px;
+  color: #e7f0ef;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+/* .infocontent {
+  z-index: 0;
+  padding: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #e7f0ef;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+  font-size: 35px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 1250px;
+  border: yellow;
+  margin-top: 40px;
+}
+
+.infocontent span {
+  color: #dccb14;
+  text-decoration: underline;
+} */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 500px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+} 
+
+/* Modal Content */
+/* .modal-content {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fefefe;
+
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 15%;
+  box-shadow: 0px 0px 20px rgb(238, 155, 1);
+} */
+
+/* The Close Button */
+/* .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  margin-top: -35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */

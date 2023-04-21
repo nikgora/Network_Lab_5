@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Сайт зоопарку</title>
+    <link rel="stylesheet" href="cash.css" />
+    <!-- <link rel="websit icon" type="jpg" href="img/WEb%20копия.jpg" /> -->
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-content">Зоопарк "Сафарі"</div>
+      <ul id="navbar">
+        <a href="Test_!.html"
+          ><img class="pic1" src="img/11111.jpg" alt=""
+        /></a>
+        <li><a href="Test_!.html">Головна</a></li>
+        <li>
+          <a href="#">Інфо</a>
+          <ul>
+            <li><a href="#">Для відвідувачей</a></li>
+            <li><a href="#">Персонал</a></li>
+          </ul>
+        </li>
+        <li><a class="Registr">Новини</a></li>
+        <li>
+          <a href="#">Контакти</a>
+          <ul>
+            <li><a href="#">Адреса</a></li>
+            <li><a href="#">Телефон</a></li>
+            <li><a href="#">Пошта</a></li>
+          </ul>
+        </li>
+        <li><a href="#">О нас</a></li>
+        <li>
+          <a href="Test2.html">Реєстрація на заходи</a>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="content2">
+      <p>-Новини-</p>
+      <p id="texttoch">
+        Подільський зоопарк у Вінниці поповнився риссю, яку привезли із
+        Миколаєва. Про це Подільський зоопарк повідомив у Фейсбуці, передає
+        Укрінформ. «Це дівчинка. Незабаром їй виповниться півроку. Оскільки
+        тварина ще зовсім маленька, ми помістили її у вольєр, де влітку жили
+        лемури. Тут вона перебуватиме до Нового року. Коли тварина знаходиться у
+        невеликому вольєрі, спостерігати та стежити за його здоров'ям набагато
+        легше», - повідомив директор Подільського зоопарку Євген Ткачик. За його
+        словами, тварину привезли до Вінниці із Миколаївського зоопарку. До
+        прийому нової мешканки Подільський зоопарк готувався наперед –
+        будівництво сучасного вольєру для рисі на етапі завершення.
+      </p>
+      <br />
+      <form
+        onsubmit="ChangeAndSave(document.getElementById('colorget').value,document.getElementById('shriftget').value)"
+      >
+        <div style="display: inline-block">
+          <div style="display: inline-block">
+            <p>-Кольор-</p>
+            <input type="color" id="colorget" onclick="" required />
+          </div>
+          <div style="display: inline-block">
+            <p>-Шрифт-</p>
+            <input
+              type="text"
+              id="shriftget"
+              onclick=""
+              placeholder="Введіть розмір"
+              pattern="[1-9][0-9]"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+        <input type="button" value="Reset" onclick="Megareset()" />
+      </form>
+    </div>
+    <script src="cash.js"></script>
+  </body>
+</html>

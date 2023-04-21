@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="3.css" rel="stylesheet" type="text/css" />
+    <title>application</title>
+  </head>
+  <body>
+    <div id="main" class="header">
+      <div class="container">
+        <div class="header-line">
+          <div class="header-logo">
+            <a href="1.html"><img src="pol.png" alt="" /></a>
+          </div>
+          <ul class="menu">
+            <li><a href="1.html">Головна</a></li>
+            <li>
+              <a href="2.html">Лікарі і режим роботи</a>
+              <ul class="submenu">
+                <li><a href="2.html">Сімейні лікарі</a></li>
+                <li><a href="">Лікарі окремих профілів</a></li>
+                <li><a href="">Режим роботи лабораторій</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Про заклад</a>
+              <ul class="submenu">
+                <li><a href="">Контакти</a></li>
+                <li><a href="">Розташування</a></li>
+                <li><a href="5.html">Відгуки</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="cart">
+            <img class="cart-img" src="gerb.png" alt="" />
+          </div>
+          <div class="phone-img">
+            <img src="phone.png" alt="" />
+          </div>
+          <div class="phone">
+            <div class="phone-text">Контактний номер</div>
+            <div class="number">
+              <a href="">066-666-66-66</a>
+            </div>
+          </div>
+          <div class="btn">
+            <a class="button" href="3.html">Запис на прийом</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="application">
+      <div class="container1">
+        <div class="application-title">Запис на прийом</div>
+        <div id="content">
+          <form class="form">
+            <div class="application-title2">
+              Введіть свої дані для реєстрації і підтвердження запису до лікаря
+            </div>
+            <label> Повне ім'я лікаря* </label>
+            <select name="name_doctor" id="name_doctor" required>
+              <option value="">Виберіть ім'я лікаря..</option>
+              <option value="Миргород Наталія Володимирівна">
+                Миргород Наталія Володимирівна
+              </option>
+              <option value="Остапенко Наталія Василівна">
+                Остапенко Наталія Василівна
+              </option>
+              <option value="Сосновська Тамара Іванівна">
+                Сосновська Тамара Іванівна
+              </option>
+              <option value="Гуренко Світлана Дмитрівна">
+                Гуренко Світлана Дмитрівна
+              </option>
+            </select>
+
+            <label>Дата прийому*</label>
+            <select name="date" id="date" required>
+              <option value="">Виберіть дату прийому..</option>
+              <option value="29.12.2022">29.12.2022</option>
+              <option value="30.12.2022">30.12.2022</option>
+              <option value="02.01.2023">02.01.2023</option>
+              <option value="03.01.2023">03.01.2023</option>
+              <option value="04.01.2023">04.01.2023</option>
+              <option value="05.01.2023">05.01.2023</option>
+              <option value="06.01.2023">06.01.2023</option>
+            </select>
+
+            <label>Час прийому*</label>
+            <select name="time" id="time" required>
+              <option value="">Виберіть час прийому..</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+            </select>
+
+            <label>Ім'я*</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Введіть ваше ім'я.."
+              required
+            />
+
+            <label>Прізвище*</label>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Введіть ваше прізвище.."
+              required
+            />
+
+            <label>По-батькові</label>
+            <input
+              type="text"
+              name="patronymic"
+              id="patronymic"
+              placeholder="Введіть ваше ім'я по-батькові.."
+              minlength="3"
+            />
+
+            <label>Стать</label>
+            <select name="sex" id="sex">
+              <option value="">Виберіть вашу стать..</option>
+              <option value="жіноча">жіноча</option>
+              <option value="чоловіча">чоловіча</option>
+            </select>
+
+            <label>Дата народження*</label>
+            <input
+              type="date"
+              name="birthdate"
+              id="birthdate"
+              min="1900-01-01"
+              max="2022-12-27"
+              required
+            /><br />
+
+            <label>Номер телефону*</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="0963411178"
+              maxlength="10"
+              minlength="10"
+              required
+            />
+
+            <button type="submit" id="save">Зберегти дані</button>
+            <button id="clear">Очистити</button>
+          </form>
+        </div>
+        <div class="confirmation">
+          <div class="confirmation_inner">
+            <div class="confirmation_close">X</div>
+            <div class="confirmation_top">
+              Дякуємо за зробленний запис до лікаря.<br />
+            </div>
+            <div class="confirmation_cont">
+              <div class="confirmation_form">
+                Ім'я доктора<br />Дата прийому<br />Час прийому<br />Ім'я<br />Прізвище<br />По-батькові
+                <br />Стать <br />Дата народження:<br />Номер телефону:
+              </div>
+              <div class="confirmation_content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./3.js"></script>
+  </body>
+</html>

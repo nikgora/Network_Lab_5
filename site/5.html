@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="5.css" type="text/css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div id="main" class="header">
+      <div class="container">
+        <div class="header-line">
+          <div class="header-logo">
+            <a href="1.html"><img src="pol.png" alt="" /></a>
+          </div>
+          <ul class="menu">
+            <li><a href="1.html">Головна</a></li>
+            <li>
+              <a href="2.html">Лікарі і режим роботи</a>
+              <ul class="submenu">
+                <li><a href="2.html">Сімейні лікарі</a></li>
+                <li><a href="">Лікарі окремих профілів</a></li>
+                <li><a href="">Режим роботи лабораторій</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="active" href="">Про заклад</a>
+              <ul class="submenu">
+                <li><a href="">Контакти</a></li>
+                <li><a href="">Розташування</a></li>
+                <li><a href="5.html">Відгуки</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="cart">
+            <img class="cart-img" src="gerb.png" alt="" />
+          </div>
+          <div class="phone-img">
+            <img src="phone.png" alt="" />
+          </div>
+          <div class="phone">
+            <div class="phone-text">Контактний номер</div>
+            <div class="number">
+              <a href="">066-666-66-66</a>
+            </div>
+          </div>
+          <div class="btn">
+            <a class="button" href="3.html">Запис на прийом</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <div class="feedback-title">Відгуки</div>
+      <form class="form"
+        onsubmit="ChangeAndSave(document.getElementById('colorget').value,document.getElementById('shriftget').value, document.getElementById('type-shrift-buttom').value)"
+      >
+          <div class = "color">
+            <input class="color-buttom" type="color" id="colorget" value="#cdcabc" onclick="" />Колір
+          </div>
+          <div class="shrift">
+            <input
+              class="shrift-buttom"
+              type="text"
+              id="shriftget"
+              onclick=""
+              placeholder="Введіть розмір"
+              value="25"
+            />Розмір
+          </div>
+
+        <div class="typeshrift">
+        <select class="type-shrift-buttom" id="type-shrift-buttom">
+          <option >Виберіть шрифт</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Palatino Linotype">Palatino Linotype</option>
+          <option value="Book Antiqua">Book Antiqua</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Arial">Arial</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Arial Black">Arial Black</option>
+          <option value="Impact">Impact</option>
+          <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Lucida Console">Lucida Console</option>
+        </select>Шрифт
+
+        <button type="submit">Зберегти</button>
+        <input class = "reset" type="button" value="Скинути" onclick="sreset()" />
+      </form>
+    </div>
+
+      <div class="feedback-text" id="feedback-text">
+        Хочу висловити подяку доктору Павлову Борису Борисовичу, експерту своєї
+        справи і команді професіоналів високого рівня Залевської Вікторії
+        Станіславівні і Суар Мохаммеду Алі. А також всьому персоналу клініки, це
+        уважні і чуйні люди. Мене хвилювали сильні болі в спині, які відбивалися
+        і на інших органах. Доктор уважно і вдумливо вивчив історію хвороби,
+        ретельно проаналізував інформацію. Швидко зібрався консиліум декількох
+        фахівців, які працюють в злагодженій команді і доповнюють один одного.
+        Сподобалося, що радилися при мені, методи лікування обговорюються зі
+        мною, дають право вибору і намагаються прийти до обопільного рішення
+        разом з пацієнтом. Так що тепер уже від мене самої
+        залежить закріплення позитивного результату. Клініка з Людським
+        ставленням і підходом.
+      </div>
+      
+    </div>
+    <script src="5.js"></script>
+  </body>
+</html>
